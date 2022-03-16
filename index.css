@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.rt-footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.rt-footer .attribution a {
+  color: #3e52a3;
+}
+
+body {
+  background-color: #684BB1;
+}
+
+/*# sourceMappingURL=index.css.map */

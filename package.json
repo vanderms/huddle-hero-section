@@ -1,0 +1,24 @@
+{
+  "name": "huddle-landing-page-with-single-introductory-section",
+  "version": "1.0.0",
+  "description": "![Design preview for the Huddle landing page with single introductory section](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch index.scss:index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanderms/huddle-hero-section.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanderms/huddle-hero-section/issues"
+  },
+  "homepage": "https://github.com/vanderms/huddle-hero-section#readme",
+  "devDependencies": {
+    "sass": "^1.49.9"
+  }
+}
