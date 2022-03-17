@@ -21,7 +21,7 @@
     <main class="main">
       <picture class="rt-background-image">
         <source srcset="./images/bg-desktop.svg" media="(min-width: 800px)" />
-        <img src="./images/bg-mobile.svg" alt="" />
+        <img class="image" src="./images/bg-mobile.svg" alt="" />
       </picture>
 
       <section aria-labelledby="hero-section-title" class="rt-hero-section">
@@ -31,11 +31,13 @@
           </a>
         </div>
         <div class="main-content">
-          <img
-            src="./images/illustration-mockups.svg"
-            alt=""
-            class="hero-image"
-          />
+          <div class="hero-image-container">
+            <img
+              src="./images/illustration-mockups.svg"
+              alt=""
+              class="hero-image"
+            />
+          </div>
           <header class="header">
             <h1 id="hero-section-title" class="title">
               Build The Community Your Fans Will Love
