@@ -63,6 +63,10 @@ body {
   .logo-container {
     margin: 38px 40px 0;
 
+    @include media(laptop) {
+      margin: 64px 80px 0;
+    }
+
     .logo {
       width: 120px;
       height: auto;
@@ -76,6 +80,18 @@ body {
   .main-content {
     margin: 70px 39px 0 40px;
 
+    @include media(laptop) {
+      margin: 104px 85px 0 80px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .hero-image-container {
+      @include media(laptop) {
+        width: math.percentage(math.div(696, 1275));
+      }
+    }
+
     .hero-image {
       width: 100%;
       height: auto;
@@ -88,6 +104,12 @@ body {
     flex-direction: column;
     align-items: center;
 
+    @include media(laptop) {
+      width: math.percentage(math.div(520, 1275));
+      align-items: flex-start;
+      margin-top: 32px;
+    }
+
     .title {
       font-family: $poppins;
       font-weight: 600;
@@ -99,6 +121,10 @@ body {
       @include media(tablet) {
         font-size: 40px;
         line-height: 60px;
+      }
+
+      @include media(laptop) {
+        text-align: left;
       }
     }
 
@@ -114,6 +140,11 @@ body {
       @include media(tablet) {
         font-size: 18px;
         line-height: 27px;
+      }
+
+      @include media(laptop) {
+        text-align: left;
+        margin-top: 24px;
       }
     }
 
@@ -152,6 +183,12 @@ body {
 
     @include media(tablet) {
       gap: 16px;
+    }
+
+    @include media(laptop) {
+      margin-top: 27px;
+      justify-content: flex-end;
+      margin-right: 80px;
     }
 
     .social-link {
