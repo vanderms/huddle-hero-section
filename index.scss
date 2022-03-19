@@ -1,5 +1,22 @@
+@use 'sass:map';
+@use 'sass:math';
+
 $open-sans: 'Open Sans', sans-serif;
 $poppins: 'Poppins', sans-serif;
+
+$breakpoints: (
+  mobile: 350px,
+  tablet: 720px,
+  laptop: 1200px,
+  desktop: 1520px,
+);
+
+@mixin media($size) {
+  $breakpoint: map.get($breakpoints, $size);
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
 
 *,
 *::before,
@@ -20,8 +37,6 @@ a {
 ul {
   list-style-type: none;
 }
-
-
 
 body {
   background-color: #684bb1;
@@ -51,6 +66,10 @@ body {
     .logo {
       width: 120px;
       height: auto;
+
+      @include media(tablet) {
+        width: 200px;
+      }
     }
   }
 
@@ -76,6 +95,11 @@ body {
       line-height: 36px;
       text-align: center;
       color: #ffffff;
+
+      @include media(tablet) {
+        font-size: 40px;
+        line-height: 60px;
+      }
     }
 
     .description {
@@ -86,6 +110,11 @@ body {
       line-height: 24px;
       text-align: center;
       color: #ffffff;
+
+      @include media(tablet) {
+        font-size: 18px;
+        line-height: 27px;
+      }
     }
 
     .call-to-action {
@@ -96,11 +125,22 @@ body {
       height: 40px;
       background: #ffffff;
       box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
-      border-radius: 20px;
+      border-radius: 999px;
       font-family: $poppins;
       font-weight: 400;
       font-size: 12px;
       color: #684bb1;
+
+      &:hover {
+        background: #e880e8;
+        color: white;
+        box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
+      }
+
+      @include media(tablet) {
+        height: 56px;
+        font-size: 18px;
+      }
     }
   }
 
@@ -109,6 +149,10 @@ body {
     display: flex;
     justify-content: center;
     gap: 10.5px;
+
+    @include media(tablet) {
+      gap: 16px;
+    }
 
     .social-link {
       height: 28px;

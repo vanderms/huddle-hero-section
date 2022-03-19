@@ -45,6 +45,11 @@ body {
   width: 120px;
   height: auto;
 }
+@media screen and (min-width: 720px) {
+  .rt-hero-section .logo-container .logo {
+    width: 200px;
+  }
+}
 .rt-hero-section .main-content {
   margin: 70px 39px 0 40px;
 }
@@ -66,6 +71,12 @@ body {
   text-align: center;
   color: #ffffff;
 }
+@media screen and (min-width: 720px) {
+  .rt-hero-section .header .title {
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
 .rt-hero-section .header .description {
   margin-top: 16px;
   font-family: "Open Sans", sans-serif;
@@ -75,6 +86,12 @@ body {
   text-align: center;
   color: #ffffff;
 }
+@media screen and (min-width: 720px) {
+  .rt-hero-section .header .description {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
 .rt-hero-section .header .call-to-action {
   margin-top: 24px;
   display: grid;
@@ -83,17 +100,33 @@ body {
   height: 40px;
   background: #ffffff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
-  border-radius: 20px;
+  border-radius: 999px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 12px;
   color: #684bb1;
+}
+.rt-hero-section .header .call-to-action:hover {
+  background: #e880e8;
+  color: white;
+  box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
+}
+@media screen and (min-width: 720px) {
+  .rt-hero-section .header .call-to-action {
+    height: 56px;
+    font-size: 18px;
+  }
 }
 .rt-hero-section .social-contact-links {
   margin-top: 64px;
   display: flex;
   justify-content: center;
   gap: 10.5px;
+}
+@media screen and (min-width: 720px) {
+  .rt-hero-section .social-contact-links {
+    gap: 16px;
+  }
 }
 .rt-hero-section .social-contact-links .social-link {
   height: 28px;
