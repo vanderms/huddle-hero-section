@@ -60,7 +60,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .rt-hero-section .main-content {
-    margin: 104px 85px 0 80px;
+    margin: 83px 85px 0 80px;
     display: flex;
     justify-content: space-between;
   }
@@ -183,6 +183,12 @@ body {
 }
 .rt-hero-section .social-contact-links .social-link:hover path {
   fill: #ff52c1;
+}
+@media screen and (min-width: 1200px) {
+  .rt-hero-section .social-contact-links .social-link {
+    height: 40px;
+    width: 40px;
+  }
 }
 
 .rt-footer {

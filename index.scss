@@ -81,7 +81,7 @@ body {
     margin: 70px 39px 0 40px;
 
     @include media(laptop) {
-      margin: 104px 85px 0 80px;
+      margin: 83px 85px 0 80px;
       display: flex;
       justify-content: space-between;
     }
@@ -204,6 +204,11 @@ body {
         path {
           fill: #ff52c1;
         }
+      }
+
+      @include media(laptop) {
+        height: 40px;
+        width: 40px;
       }
     }
   }
